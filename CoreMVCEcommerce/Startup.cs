@@ -14,6 +14,8 @@ using Microsoft.Extensions.Hosting;
 using CoreMVCEcommerce.DataAccess.Data;
 using CoreMVCEcommerce.DataAccess.Repository.IRepository;
 using CoreMVCEcommerce.DataAccess.Repository;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using CoreMVCEcommerce.Utility;
 
 namespace CoreMVCEcommerce
 {
@@ -32,8 +34,9 @@ namespace CoreMVCEcommerce
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddSingleton<IEmailSender, EmailSender>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();

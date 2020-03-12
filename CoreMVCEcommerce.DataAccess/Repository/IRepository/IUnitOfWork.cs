@@ -9,8 +9,9 @@ namespace CoreMVCEcommerce.DataAccess.Repository.IRepository
         ISizeRepository Size { get; }
         IColourRepository Colour { get; }
         IProductRepository Product { get; }
-       
-        //ISP_Call SP_Call { get; }
+        ICompanyRepository Company { get; }
+        IApplicationUserRepository ApplicationUser { get; }
+        ISP_Call SP_Call { get; }
 
         void Save();
 
