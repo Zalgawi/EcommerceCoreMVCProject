@@ -16,5 +16,9 @@ namespace CoreMVCEcommerce.DataAccess.Data
         public DbSet<Size> Sizes { get; set; }
         public DbSet<Colour> Colours { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+
     }
 }
+ 

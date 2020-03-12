@@ -14,3 +14,5 @@ C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.Utility\obj\Debug\n
 C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.Utility\obj\Debug\netcoreapp3.1\CoreMVCEcommerce.Utility.AssemblyInfo.cs
 C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.Utility\obj\Debug\netcoreapp3.1\CoreMVCEcommerce.Utility.dll
 C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.Utility\obj\Debug\netcoreapp3.1\CoreMVCEcommerce.Utility.pdb
+C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.Utility\bin\Debug\netcoreapp3.1\CoreMVCEcommerce.Utility.runtimeconfig.json
+C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.Utility\bin\Debug\netcoreapp3.1\CoreMVCEcommerce.Utility.runtimeconfig.dev.json

@@ -24,3 +24,5 @@ C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.DataAccess\obj\Debu
 C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.DataAccess\obj\Debug\netcoreapp3.1\CoreMVCEcommerce.DataAccess.csproj.CopyComplete
 C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.DataAccess\obj\Debug\netcoreapp3.1\CoreMVCEcommerce.DataAccess.dll
 C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.DataAccess\obj\Debug\netcoreapp3.1\CoreMVCEcommerce.DataAccess.pdb
+C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.DataAccess\bin\Debug\netcoreapp3.1\CoreMVCEcommerce.DataAccess.runtimeconfig.json
+C:\Users\Josh\source\repos\CoreMVCEcommerce\CoreMVCEcommerce.DataAccess\bin\Debug\netcoreapp3.1\CoreMVCEcommerce.DataAccess.runtimeconfig.dev.json
