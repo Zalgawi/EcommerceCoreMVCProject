@@ -46,6 +46,11 @@ namespace CoreMVCEcommerce
                 options.LogoutPath = $"/Identity/Account/Logout";
                 options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
             });
+            services.AddAuthentication().AddFacebook(options =>
+            {
+                options.AppId = "515956529352364";
+                options.AppSecret = "8f5b0ad2982ba982622682071a8a6010";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

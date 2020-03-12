@@ -12,6 +12,7 @@
           "CoreMVCEcommerce.Utility": "1.0.0",
           "Dapper": "2.0.30",
           "EntityFramework": "6.4.0",
+          "Microsoft.AspNetCore.Authentication.Facebook": "3.1.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.2",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.2",
@@ -92,6 +93,14 @@
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0"
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Facebook/3.1.2": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.100.220.6801"
+          }
         }
       },
       "Microsoft.AspNetCore.Authorization/2.2.0": {
@@ -1668,6 +1677,7 @@
         "dependencies": {
           "EntityFramework": "6.4.0",
           "Microsoft.AspNet.Identity.EntityFramework": "2.2.3",
+          "Microsoft.AspNetCore.Authentication.Facebook": "3.1.2",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Microsoft.Extensions.Identity.Stores": "3.1.2"
         },
@@ -1678,6 +1688,7 @@
       "CoreMVCEcommerce.Utility/1.0.0": {
         "dependencies": {
           "EntityFramework": "6.4.0",
+          "Microsoft.AspNetCore.Authentication.Facebook": "3.1.2",
           "Microsoft.AspNetCore.Identity.UI": "3.1.2",
           "Microsoft.Extensions.Identity.Stores": "3.1.2"
         },
@@ -1741,6 +1752,13 @@
       "sha512": "sha512-HpxpAAuEgWGSLPdzsBjPHrxFS/Up7jTRa4WQGcqWrOg52+A7qx1UbNlNPnV+nYk3mk1AZ1besmTlNz0TE8nOvA==",
       "path": "microsoft.aspnetcore.authentication.core/2.2.0",
       "hashPath": "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FkC/CgnRkArFG/+az8fC0cJnJNezzVW6hIQjKuSS1i1Jr0Lm38lgtHlBt8tf9cPO4IBaA6CK3PBx5APTkic20w==",
+      "path": "microsoft.aspnetcore.authentication.facebook/3.1.2",
+      "hashPath": "microsoft.aspnetcore.authentication.facebook.3.1.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/2.2.0": {
       "type": "package",
