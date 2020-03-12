@@ -4,11 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using CoreMVCEcommerce.DataAccess.Repository.IRepository;
 using CoreMVCEcommerce.Models;
+using CoreMVCEcommerce.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreMVCEcommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class SizeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

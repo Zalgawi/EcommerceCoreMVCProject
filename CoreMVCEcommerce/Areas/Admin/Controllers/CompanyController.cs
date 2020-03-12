@@ -4,11 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using CoreMVCEcommerce.DataAccess.Repository.IRepository;
 using CoreMVCEcommerce.Models;
+using CoreMVCEcommerce.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreMVCEcommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin + "," + SD.Role_Employee)]
+
     public class CompanyController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
