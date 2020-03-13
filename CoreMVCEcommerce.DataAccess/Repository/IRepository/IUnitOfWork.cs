@@ -8,6 +8,9 @@ namespace CoreMVCEcommerce.DataAccess.Repository.IRepository
     {
         ISizeRepository Size { get; }
         IColourRepository Colour { get; }
+        IShoppingCartRepository ShoppingCart { get; }
+        IOrderDetailsRepository OrderDetails { get; }
+        IOrderHeaderRepository OrderHeader { get; }
         IProductRepository Product { get; }
         ICompanyRepository Company { get; }
         IApplicationUserRepository ApplicationUser { get; }
