@@ -37,6 +37,7 @@ namespace CoreMVCEcommerce
             services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddSingleton<IEmailSender, EmailSender>();
+            services.Configure<EmailOptions>(Configuration);
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
@@ -50,6 +51,11 @@ namespace CoreMVCEcommerce
             {
                 options.AppId = "515956529352364";
                 options.AppSecret = "8f5b0ad2982ba982622682071a8a6010";
+            });
+            services.AddAuthentication().AddGoogle(options =>
+            {
+                options.ClientId = "116895084107-nb8m2klkantddo5icp1mjcdkk8broojo.apps.googleusercontent.com";
+                options.ClientSecret = "yEWzXu4fjzzydmbm2ZvB5R2B";
             });
         }
 
