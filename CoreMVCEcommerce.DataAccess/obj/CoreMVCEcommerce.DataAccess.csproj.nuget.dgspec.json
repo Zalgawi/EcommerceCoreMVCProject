@@ -79,6 +79,10 @@
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[35.5.0, )"
             }
           },
           "imports": [
@@ -163,6 +167,10 @@
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[35.5.0, )"
             }
           },
           "imports": [
@@ -247,6 +255,10 @@
             "Sendgrid": {
               "target": "Package",
               "version": "[9.13.0, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[35.5.0, )"
             }
           },
           "imports": [

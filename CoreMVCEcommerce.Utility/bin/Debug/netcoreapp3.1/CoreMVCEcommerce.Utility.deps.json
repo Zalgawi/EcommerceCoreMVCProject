@@ -13,7 +13,8 @@
           "Microsoft.AspNetCore.Authentication.Google": "3.1.2",
           "Microsoft.AspNetCore.Identity.UI": "3.1.2",
           "Microsoft.Extensions.Identity.Stores": "3.1.2",
-          "SendGrid": "9.13.0"
+          "SendGrid": "9.13.0",
+          "Stripe.net": "35.5.0"
         },
         "runtime": {
           "CoreMVCEcommerce.Utility.dll": {}
@@ -310,6 +311,18 @@
           "lib/netstandard2.0/SendGrid.dll": {
             "assemblyVersion": "9.13.0.0",
             "fileVersion": "9.13.0.0"
+          }
+        }
+      },
+      "Stripe.net/35.5.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2",
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Stripe.net.dll": {
+            "assemblyVersion": "35.5.0.0",
+            "fileVersion": "35.5.0.0"
           }
         }
       },
@@ -618,6 +631,13 @@
       "sha512": "sha512-ZkYkdZ/4KYdu6Ewrf8ZGSc8WIScVq8+CtPgf3tUlvVxtFKJ+zld0Ki6Nv4Z2Drt5qbK3TDmFNIRwiKXnrtVfTQ==",
       "path": "sendgrid/9.13.0",
       "hashPath": "sendgrid.9.13.0.nupkg.sha512"
+    },
+    "Stripe.net/35.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BwHbKSXjzBOMkMtwhRkolf96B4UPTNGjexwGIG1UuDhZ0d/k8jjLjbh5VGivLB2P1JteYa84Wu/TDttDpk9eXQ==",
+      "path": "stripe.net/35.5.0",
+      "hashPath": "stripe.net.35.5.0.nupkg.sha512"
     },
     "System.CodeDom/4.7.0": {
       "type": "package",

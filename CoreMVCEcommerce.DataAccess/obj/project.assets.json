@@ -1294,6 +1294,19 @@
           "lib/netstandard2.0/SendGrid.dll": {}
         }
       },
+      "Stripe.net/35.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Stripe.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Stripe.net.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2764,7 +2777,8 @@
           "Microsoft.AspNetCore.Authentication.Facebook": "3.1.2",
           "Microsoft.AspNetCore.Authentication.Google": "3.1.2",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
-          "Microsoft.Extensions.Identity.Stores": "3.1.2"
+          "Microsoft.Extensions.Identity.Stores": "3.1.2",
+          "Stripe.net": "35.5.0"
         },
         "compile": {
           "bin/placeholder/CoreMVCEcommerce.Models.dll": {}
@@ -2785,7 +2799,8 @@
           "Microsoft.AspNetCore.Authentication.Google": "3.1.2",
           "Microsoft.AspNetCore.Identity.UI": "3.1.2",
           "Microsoft.Extensions.Identity.Stores": "3.1.2",
-          "Sendgrid": "9.13.0"
+          "Sendgrid": "9.13.0",
+          "Stripe.net": "35.5.0"
         },
         "compile": {
           "bin/placeholder/CoreMVCEcommerce.Utility.dll": {}
@@ -4510,6 +4525,23 @@
         "lib/netstandard2.0/SendGrid.xml",
         "sendgrid.9.13.0.nupkg.sha512",
         "sendgrid.nuspec"
+      ]
+    },
+    "Stripe.net/35.5.0": {
+      "sha512": "BwHbKSXjzBOMkMtwhRkolf96B4UPTNGjexwGIG1UuDhZ0d/k8jjLjbh5VGivLB2P1JteYa84Wu/TDttDpk9eXQ==",
+      "type": "package",
+      "path": "stripe.net/35.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Stripe.net.dll",
+        "lib/net45/Stripe.net.pdb",
+        "lib/net45/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.pdb",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.35.5.0.nupkg.sha512",
+        "stripe.net.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -8884,7 +8916,8 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.2",
       "Microsoft.EntityFrameworkCore.Relational >= 3.1.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.2",
-      "Microsoft.Extensions.Identity.Stores >= 3.1.2"
+      "Microsoft.Extensions.Identity.Stores >= 3.1.2",
+      "Stripe.net >= 35.5.0"
     ]
   },
   "packageFolders": {
@@ -8966,6 +8999,10 @@
           "Microsoft.Extensions.Identity.Stores": {
             "target": "Package",
             "version": "[3.1.2, )"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "[35.5.0, )"
           }
         },
         "imports": [

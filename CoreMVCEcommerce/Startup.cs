@@ -16,6 +16,7 @@ using CoreMVCEcommerce.DataAccess.Repository.IRepository;
 using CoreMVCEcommerce.DataAccess.Repository;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using CoreMVCEcommerce.Utility;
+using Stripe;
 
 namespace CoreMVCEcommerce
 {
@@ -38,6 +39,7 @@ namespace CoreMVCEcommerce
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddSingleton<IEmailSender, EmailSender>();
             services.Configure<EmailOptions>(Configuration);
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
@@ -83,6 +85,7 @@ namespace CoreMVCEcommerce
             app.UseStaticFiles();
 
             app.UseRouting();
+            StripeConfiguration.ApiKey = Configuration.GetSection("Stripe")["SecretKey"];
             app.UseSession();
 
 

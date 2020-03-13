@@ -386,6 +386,19 @@
           "lib/netstandard2.0/SendGrid.dll": {}
         }
       },
+      "Stripe.net/35.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Stripe.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Stripe.net.dll": {}
+        }
+      },
       "System.CodeDom/4.7.0": {
         "type": "package",
         "compile": {
@@ -1260,6 +1273,23 @@
         "sendgrid.nuspec"
       ]
     },
+    "Stripe.net/35.5.0": {
+      "sha512": "BwHbKSXjzBOMkMtwhRkolf96B4UPTNGjexwGIG1UuDhZ0d/k8jjLjbh5VGivLB2P1JteYa84Wu/TDttDpk9eXQ==",
+      "type": "package",
+      "path": "stripe.net/35.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Stripe.net.dll",
+        "lib/net45/Stripe.net.pdb",
+        "lib/net45/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.pdb",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.35.5.0.nupkg.sha512",
+        "stripe.net.nuspec"
+      ]
+    },
     "System.CodeDom/4.7.0": {
       "sha512": "Hs9pw/kmvH3lXaZ1LFKj3pLQsiGfj2xo3sxSzwiLlRL6UcMZUTeCfoJ9Udalvn3yq5dLlPEZzYegrTQ1/LhPOQ==",
       "type": "package",
@@ -1720,7 +1750,8 @@
       "Microsoft.AspNetCore.Authentication.Google >= 3.1.2",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.2",
       "Microsoft.Extensions.Identity.Stores >= 3.1.2",
-      "Sendgrid >= 9.13.0"
+      "Sendgrid >= 9.13.0",
+      "Stripe.net >= 35.5.0"
     ]
   },
   "packageFolders": {
@@ -1787,6 +1818,10 @@
           "Sendgrid": {
             "target": "Package",
             "version": "[9.13.0, )"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "[35.5.0, )"
           }
         },
         "imports": [
