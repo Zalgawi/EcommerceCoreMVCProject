@@ -17,7 +17,7 @@ namespace CoreMVCEcommerce.DataAccess.Repository
             _db = db;
         }
 
-        public void Update(ShoppingCart obj)
+        public void Update(OrderHeader obj)
         {
             _db.Update(obj);
         }
