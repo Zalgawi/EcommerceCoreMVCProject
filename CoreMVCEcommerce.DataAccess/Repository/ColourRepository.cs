@@ -24,6 +24,7 @@ namespace CoreMVCEcommerce.DataAccess.Repository
             {
                 objFromDb.Name = colour.Name;
                 objFromDb.Code = colour.Code;
+                objFromDb.Description = colour.Description;
                 _db.SaveChanges();
             }
         }

@@ -10,8 +10,9 @@ function loadDataTable() {
             "url": "/Admin/Colour/GetAll"
         },
         "columns": [
-            { "data": "name", "width": "30%" },
-            { "data": "code", "width": "30%" },
+            { "data": "name", "width": "15%" },
+            { "data": "code", "width": "15%" },
+            { "data": "description", "width": "50%" },
             {
                 "data": "id",
                 "render": function (data) {
@@ -25,7 +26,7 @@ function loadDataTable() {
                         </a>
                     </div>
                           `;
-                }, "width": "40%"
+                }, "width": "20%"
             }
         ]
     });
