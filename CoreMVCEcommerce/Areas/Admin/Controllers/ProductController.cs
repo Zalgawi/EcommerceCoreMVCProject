@@ -141,7 +141,7 @@ namespace CoreMVCEcommerce.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var allObj = _unitOfWork.Product.GetAll(includeProperties: "Colour,Size");
+            var allObj = _unitOfWork.Product.GetAll(includeProperties: "Size,Colour");
             return Json(new { data = allObj });
         }
 
