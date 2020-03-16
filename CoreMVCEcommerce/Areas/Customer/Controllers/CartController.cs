@@ -218,7 +218,10 @@ namespace CoreMVCEcommerce.Areas.Customer.Controllers
 
             if (stripeToken == null)
             {
-
+                //This means that the user is an authorised company user, and can make the payments for up to 30 days after the order
+                ShoppingCartVM.OrderHeader.PaymentDueDate = DateTime.Now.AddDays(30);
+                ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusDelayedPayment;
+                ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusApproved;
             }
             else
             {
