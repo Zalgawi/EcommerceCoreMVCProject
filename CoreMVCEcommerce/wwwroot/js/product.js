@@ -12,9 +12,10 @@ function loadDataTable() {
         },
         "columns": [
             { "data": "name", "width": "15%" },
-            { "data": "price", "width": "15%" },
-            { "data": "colour.name", "width": "15%" },
-            { "data": "size.name", "width": "15%" },
+            { "data": "price", "width": "5%" },
+            { "data": "colour.name", "width": "5%" },
+            { "data": "size.name", "width": "5%" },
+            { "data": "description", "width": "20%" },
             {
                 "data": "id",
                 "render": function (data) {
@@ -28,7 +29,7 @@ function loadDataTable() {
                                 </a>
                             </div>
                            `;
-                }, "width": "40%"
+                }, "width": "15%"
             }
         ]
     });

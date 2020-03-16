@@ -52,6 +52,26 @@ namespace CoreMVCEcommerce.Areas.Customer.Controllers
         {
             return View();
         }
+
+        public IActionResult About()
+        {
+            IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Size,Colour");
+
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            if (claim != null)
+            {
+                var count = _unitOfWork.ShoppingCart
+                    .GetAll(c => c.ApplicationUserId == claim.Value)
+                    .ToList().Count();
+
+                HttpContext.Session.SetInt32(SD.ssShoppingCart, count);
+            }
+
+
+            return View(productList);
+
+        }
         public IActionResult Details(int id)
         {
             var productFromDb = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id, includeProperties: "Size,Colour");
