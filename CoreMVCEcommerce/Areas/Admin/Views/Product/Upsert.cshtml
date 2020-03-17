@@ -41,7 +41,12 @@
                     <label asp-for="Product.ListPrice"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="Product.ListPrice" class="form-control" />
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">£</span>
+                        </div> 
+                        <input asp-for="Product.ListPrice" class="form-control" />  
+                    </div>
                     <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
                 </div>
             </div>
@@ -50,7 +55,12 @@
                     <label asp-for="Product.Price"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="Product.Price" class="form-control" />
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">£</span>
+                        </div> 
+                        <input asp-for="Product.Price" class="form-control" />  
+                    </div>
                     <span asp-validation-for="Product.Price" class="text-danger"></span>
                 </div>
             </div>
@@ -59,7 +69,12 @@
                     <label asp-for="Product.Price50"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="Product.Price50" class="form-control" />
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">£</span>
+                        </div> 
+                        <input asp-for="Product.Price50" class="form-control" />  
+                    </div>
                     <span asp-validation-for="Product.Price50" class="text-danger"></span>
                 </div>
             </div>
@@ -68,7 +83,12 @@
                     <label asp-for="Product.Price100"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="Product.Price100" class="form-control" />
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">£</span>
+                        </div> 
+                        <input asp-for="Product.Price100" class="form-control" />  
+                    </div>
                     <span asp-validation-for="Product.Price100" class="text-danger"></span>
                 </div>
             </div>

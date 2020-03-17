@@ -22,6 +22,7 @@ namespace CoreMVCEcommerce.DataAccess.Repository
             ShoppingCart = new ShoppingCartRepository(_db);
             OrderHeader = new OrderHeaderRepository(_db);
             OrderDetails = new OrderDetailsRepository(_db);
+            EditablePage = new EditablePageRepository(_db);
 
 
         }
@@ -35,6 +36,7 @@ namespace CoreMVCEcommerce.DataAccess.Repository
         public IShoppingCartRepository ShoppingCart { get; private set; }
         public IOrderDetailsRepository OrderDetails { get; private set; }
         public IOrderHeaderRepository OrderHeader { get; private set; }
+        public IEditablePageRepository EditablePage { get; private set; }
 
 
         public void Dispose()

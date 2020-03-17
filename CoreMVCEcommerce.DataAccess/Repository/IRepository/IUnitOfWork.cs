@@ -14,6 +14,7 @@ namespace CoreMVCEcommerce.DataAccess.Repository.IRepository
         IProductRepository Product { get; }
         ICompanyRepository Company { get; }
         IApplicationUserRepository ApplicationUser { get; }
+        IEditablePageRepository EditablePage { get; }
         ISP_Call SP_Call { get; }
 
         void Save();
